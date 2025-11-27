@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Another Leap Year</title>
+</head>
+<body>
+<p id="leap"></p>
+<script>
+    'use strict';
+    let startYear = parseInt(prompt('Enter a start year: '));
+    let endYear = parseInt(prompt('Enter an end year: '));
+    document.write('<ul>');
+    for (let year = startYear; year <= endYear; year++) {
+        if (( year % 4 === 0 && year % 100 !==0)  || (year % 400 === 0)) {
+            document.write('<li>' + year + '</li>');
+        }
+    }
+    document.write('</ul>');
+</script>
+</body>
+</html>

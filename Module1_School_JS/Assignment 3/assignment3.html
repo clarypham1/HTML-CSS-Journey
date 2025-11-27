@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Integer Numbers</h1>
+<p id="sum"></p>
+<p id="product"></p>
+<p id="average"></p>
+<script>
+    'use strict';
+    const a = parseInt(prompt('Enter the first integer'));
+    const b = parseInt(prompt('Enter the second integer'));
+    const c = parseInt(prompt('Enter the third integer'));
+
+    const sum = a + b + c;
+    const product = a * b * c;
+    const average = sum/3;
+
+    document.querySelector('#sum').innerHTML = 'The sum of 3 integer numbers is: ' + sum;
+    document.querySelector('#product').innerHTML = 'The product of 3 integer numbers is: ' + product;
+    document.querySelector('#average').innerHTML = 'The average of 3 integer numbers is: ' + average;
+</script>
+
+</body>
+</html>

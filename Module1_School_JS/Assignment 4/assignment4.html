@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Electronic Sorting Hat - Harry Porter</title>
+</head>
+<body>
+<p id="sort"></p>
+<script>
+    'use strict';
+    const studentName = prompt('Enter your name: ');
+    const houseNumber = Math.floor(Math.random() * 4) + 1;
+    let house;
+    if (houseNumber === 1) {
+        house = 'Gryffindor';
+    } else if (houseNumber === 2) {
+        house = 'Slytherin';
+    } else if (houseNumber === 3) {
+        house = 'Hufflepuff';
+    } else {
+        house = 'Ravenclaw';
+    }
+    document.querySelector('#sort').innerHTML = studentName + ', you are ' + house;
+</script>
+</body>
+</html>
